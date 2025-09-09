@@ -1,0 +1,9 @@
+# netlify.toml
+[build]
+  publish = "build/web"
+  command = "flutter build web"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
